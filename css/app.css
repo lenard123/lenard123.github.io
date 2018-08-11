@@ -3,48 +3,57 @@ html, body {
     color: #636b6f;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    height: 100vh;
+    height: 100%;
     margin: 0;
+    margin-top: 15px;
 }
 
-.full-height {
-    height: 100vh;
-}
-
-.flex-center {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.position-ref {
-    position: relative;
-}
-
-.top-right {
-    position: absolute;
-    right: 10px;
-    top: 18px;
-}
-
-.content {
+.center {
     text-align: center;
 }
 
+#home {
+    background: url('../images/image6.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about {
+    min-height: 100%;
+}
+
+#portfolio {
+    min-height: 100%;
+    background: url('../images/image5.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact {
+    min-height: 100%;
+}
+
+.home-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.about-text {
+    font-size: 24px;
+}
+
 .title {
-    font-size: 84px;
-}
-
-.links > a {
-    color: #636b6f;
-    padding: 0 25px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.m-b-md {
-    margin-bottom: 30px;
+    font-size: 36px;
+    color: gray;
+    text-align: center;
+    padding: 30px;
 }

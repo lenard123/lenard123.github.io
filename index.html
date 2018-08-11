@@ -4,19 +4,144 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-	<link rel="stylesheet" type="text/css" href="./css/app.css"/>
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/><!-- Bootstrap 3.3.7 -->
+	<link rel="stylesheet" type="text/css" href="./css/app.css"/><!-- Custom Design -->
+
+	<script src="./js/jquery.min.js"></script><!-- JQuery 1.11.3 -->
+	<script src="./js/bootstrap.min.js"></script>
 
 	<title>I am Lenard</title>
 </head>
-<body>
-	<div class="flex-center position-ref full-height">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-		<div class="content">
-			<div class="title m-b-md">
-				This Site is Currently under construction
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>										
+				</button>
+				<a class="navbar-brand" href="#">Lenard</a>
 			</div>
-		</div>
 
+			<div class="collapse navbar-collapse" id="nav">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact Me</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<!-- Home -->
+	<div id="home">
+		<div class="home-text">
+			<img src="./images/L.png" height="150px" width="150px" class="img-circle" alt="LOGO, L" />
+			<h1>Hi i'm Lenard</h1>
+			<p>A WEB DEVELOPER CURRENTLY LIVING IN CALOOCAN, PHILIPPINES.<br/>I MAKE WEB APPLICATION USUALLY WITH LARAVEL AND VUEJS.</p>
+		</div>
 	</div>
+
+
+	<!-- About me -->
+	<div id="about" class="container">
+		<div class="title">About Me</div>
+		<div class="row">
+	
+			<div class="col-md-4">
+				<img 
+					src="./images/1x1.jpg" 
+					alt="Display Picture" 
+					height="200px" 
+					width="200px" 
+					class="thumbnail" />
+				<div class="container">
+					<p>John-Lenard Mangay-ayam</p>
+					<p>Web Developer</p>
+				</div>
+			</div>
+	
+			<div class="col-md-8 container">
+				<span class="about-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</span>
+			</div>	
+		</div>
+	</div>
+
+
+	<!-- Portfolio -->
+	<div id="portfolio">
+		<div class="title">Portfolio</div>
+	</div>
+
+
+	<!-- Contact -->
+	<div id="contact">
+		<span class="title">Contact Us</span>
+	</div>
+
+
+	<script type="text/javascript">
+		let x = [1, 10, 9, 8, 7, 6, 5, 4, 3, 2];
+		let numberOrLoop = 0;
+		//numberorsort = 2;
+		// i = 1;
+		let bubble_sort = function (array) {
+			let isSorted = true;
+			for (var i = 0; i < array.length; i++) {
+				numberOrLoop++;
+				if (array[i+1] < array[i]) {
+					isSorted = false;
+					array.splice(i,2,array[i+1],array[i]);
+				}
+			}
+			if (!isSorted) return bubble_sort(array);
+			return array;
+		}
+
+		let insertion_sort = function (array) {
+			let holePosition;
+			let valueToInsert;
+			for (var i = 0; i<array.length;i++) {
+				valueToInsert =array[i];
+				holePosition = i;
+
+				//TRUE TRUE    == TRUE
+				//FALSE FALSE  == FALSE
+
+				//TRUE FALSE   == TRUE
+				//FALSE TRUE   == FALSE
+
+				//FALSE TRUE   == TRUE
+				//TRUE FALSE   == FALSE
+
+				//FALSE FALSE  == FALSE
+				//TRUE TRUE    == TRUE
+
+				if (holePosition < 0 || array[holePosition-1] < valueToInsert)
+					numberOrLoop++;
+				while(holePosition > 0 && array[holePosition-1] > valueToInsert) {
+					numberOrLoop++;
+					array[holePosition] = array[holePosition-1];
+					holePosition = holePosition-1;
+				}
+				array[holePosition] = valueToInsert;
+			}
+			return array;
+		}
+	</script>
+
 </body>
 </html>
