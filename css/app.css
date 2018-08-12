@@ -1,5 +1,9 @@
 html, body {
     background-color: #fff;
+    background: url('../images/image6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #636b6f;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
@@ -13,25 +17,29 @@ html, body {
 }
 
 #home {
-    background: url('../images/image6.jpg');
     height: 100%;
+/*    background: url('../images/image6.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 #about {
     min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*background: url('../images/image7.jpg');
+    background-attachment: fixed;*/
+    color: white;
 }
 
 #portfolio {
     min-height: 100%;
-    background: url('../images/image5.jpg');
+    /*background: url('../images/image8.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 #contact {
