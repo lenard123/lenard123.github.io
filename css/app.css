@@ -26,11 +26,13 @@ html, body {
 }
 
 #about {
-    min-height: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     /*background: url('../images/image7.jpg');
     background-attachment: fixed;*/
     color: white;
+    margin: 20px;
+    padding-top: 50px;
 }
 
 #portfolio {
