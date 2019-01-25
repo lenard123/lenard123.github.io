@@ -19217,6 +19217,9 @@ module.exports = function spread(callback) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_Home_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__pages_Home_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_Sets_vue__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_Sets_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__pages_Sets_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_Questions_vue__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_Questions_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__pages_Questions_vue__);
+
 
 
 
@@ -19228,6 +19231,10 @@ var routes = [{
     path: "/:subject",
     component: __WEBPACK_IMPORTED_MODULE_1__pages_Sets_vue___default.a,
     name: "set"
+}, {
+    path: "/:subject/:set",
+    component: __WEBPACK_IMPORTED_MODULE_2__pages_Questions_vue___default.a,
+    name: "question"
 }];
 
 var router = new VueRouter({
@@ -19393,24 +19400,28 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._m(0), _vm._v(" "), _c("router-view")], 1)
+  return _c(
+    "div",
+    [
+      _c(
+        "nav",
+        { staticClass: "navbar navbar-expand-lg navbar-dark bg-primary" },
+        [
+          _c(
+            "router-link",
+            { staticClass: "navbar-brand", attrs: { to: "/" } },
+            [_vm._v("MOCK EXAM")]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("router-view")
+    ],
+    1
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "nav",
-      { staticClass: "navbar navbar-expand-lg navbar-dark bg-primary" },
-      [
-        _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
-          _vm._v("MOCK EXAM")
-        ])
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -19438,7 +19449,8 @@ if (false) {
 /* harmony default export */ __webpack_exports__["a"] = ({
     state: {
         subjects: [],
-        sets: []
+        sets: [],
+        questions: []
     },
 
     mutations: {
@@ -19809,7 +19821,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     created: function created() {
-        console.log(this, this.subjects.length);
         if (this.subjects.length <= 0) {
             this.getSubject();
         } else {
@@ -19918,13 +19929,24 @@ var render = function() {
               _c("h1", [_vm._v("Choose Set of Questions")]),
               _vm._v(" "),
               _vm._l(_vm.sets, function(set) {
-                return _c("div", { staticClass: "card mt-1" }, [
-                  _c("div", { staticClass: "card-body" }, [
-                    _c("div", { staticClass: "card-title" }, [
-                      _vm._v(_vm._s(set.name))
+                return _c(
+                  "div",
+                  {
+                    staticClass: "card mt-1",
+                    on: {
+                      click: function($event) {
+                        _vm.$router.push(_vm.subject + "/" + set.name)
+                      }
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "card-title" }, [
+                        _vm._v(_vm._s(set.name))
+                      ])
                     ])
-                  ])
-                ])
+                  ]
+                )
               })
             ],
             2
@@ -19942,6 +19964,143 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-07ad1859", module.exports)
   }
 }
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(9)
+/* script */
+var __vue_script__ = __webpack_require__(55)
+/* template */
+var __vue_template__ = null
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "src/js/pages/Questions.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-49f79575", Component.options)
+  } else {
+    hotAPI.reload("data-v-49f79575", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 55 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+
+    created: function created() {
+
+        if (this.sets.length <= 0) {
+            this.$router.push("/" + this.subject);
+        } else {
+            this.getQuestions();
+        }
+    },
+
+    methods: {
+
+        getQuestions: function getQuestions() {
+            var _this = this;
+
+            var data = this.sets.find(function (set) {
+                return set.name == _this.set;
+            });
+            if (data == undefined) {
+                alert("Set not found");
+                this.$router.push(this.subject);
+            } else {
+                axios.get(data.data).then(function (response) {
+                    _this.questions = response.data;
+                    console.log(response);
+                }).catch(function (error) {
+                    console.log(error);
+                });
+            }
+        }
+
+    },
+
+    computed: {
+
+        subject: function subject() {
+            return this.$route.params.subject;
+        },
+
+        set: function set() {
+            return this.$route.params.set;
+        },
+
+        subjects: {
+
+            get: function get() {
+                return this.$store.state.subjects;
+            },
+
+            set: function set(val) {
+                this.$store.commit('subjects', val);
+            }
+
+        },
+
+        sets: {
+
+            get: function get() {
+                return this.$store.state.sets;
+            },
+
+            set: function set(val) {
+                this.$store.commit('sets', val);
+            }
+
+        },
+
+        questions: {
+
+            get: function get() {
+                return this.$store.state.questions;
+            },
+
+            set: function set(val) {
+                this.$store.commit('questions', val);
+            }
+
+        }
+    }
+
+});
 
 /***/ })
 /******/ ]);
