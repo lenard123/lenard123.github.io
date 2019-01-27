@@ -2,15 +2,5 @@
     {
         "name": "Math",
         "data": "./data/math/index.json"
-    },
-
-    {
-        "name": "English",
-        "data": "./data/english/index.json"
-    },
-
-    {
-        "name": "Science",
-        "data": "./data/science/index.json"
     }
 ]
