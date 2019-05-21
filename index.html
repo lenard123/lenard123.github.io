@@ -1,97 +1,208 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"class="has-navbar-fixed-top">
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/><!-- Bootstrap 3.3.7 -->
-	<link rel="stylesheet" type="text/css" href="./css/app.css"/><!-- Custom Design -->
-
-	<script src="./js/jquery.min.js"></script><!-- JQuery 1.11.3 -->
-	<script src="./js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
 
 	<title>I am Lenard</title>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
+<nav class="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation">
 
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>										
-				</button>
-				<a class="navbar-brand" href="#">Lenard</a>
-			</div>
-
-			<div class="collapse navbar-collapse" id="nav">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About Me</a></li>
-					<li><a href="#achievement">Achievements</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact Me</a></li>
-				</ul>
-			</div>
-
-		</div>
-	</nav>
-
-	<!-- Home -->
-	<div id="home">
-		<div class="home-text">
-			<a href="./images/L.png">
-				<img src="./images/L.png" height="150px" width="150px" class="img-circle" alt="LOGO, L" />
-			</a>
-			<h1>Hi i'm Lenard</h1>
-			<p>A WEB DEVELOPER CURRENTLY LIVING IN CALOOCAN, PHILIPPINES.<br/>I MAKE WEB APPLICATION USUALLY WITH LARAVEL AND VUEJS.</p>
-		</div>
+	<div class="navbar-brand">
+		<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+		  <span aria-hidden="true"></span>
+		  <span aria-hidden="true"></span>
+		  <span aria-hidden="true"></span>
+		</a>
 	</div>
 
+	<div class="navbar-menu" id="navMenu">
 
-	<!-- About me -->
-	<div id="about">
-		<div class="container">
-			<div class="title" style="color: white;">About Me</div>
-			<div class="row">
-		
-				<div class="col-md-3">
-					<a href="./images/1x1.jpg">
-						<img 
-						src="./images/1x1.jpg" 
-						alt="Display Picture" 
-						height="200px" 
-						width="200px" 
-						class="thumbnail" /></a>
-					<div class="container">
-						<p>John-Lenard Mangay-ayam</p>
-						<p>Web Developer</p>
+		<div class="navbar-start">
+
+			<a class="navbar-item" href="#home">HOME</a>
+			<a class="navbar-item" href="#about">ABOUT</a>
+			<a class="navbar-item" href="#portfolio">PORTFOLIO</a>
+			<a class="navbar-item">CONTACTS</a>
+
+		</div>
+
+	</div>
+
+</nav>
+
+<section id="home" class="page flex">
+
+	<div class="flex">
+
+		<div class="text">
+			Hello, I'm <span class="highlight">Lenard Mangay-ayam</span>.
+			<br/>
+			I'm a fullstack Web Developer.
+
+		</div>
+
+		<a class="button is-info is-outlined" href="#about"> Learn More</a>
+
+	</div>
+
+</section>
+
+<section id="about" class="page">
+
+	<div class="header">
+		ABOUT
+	</div>
+
+	<div class="container flex" style="margin-top: 30px">
+	
+		<div class="columns is-desktop">
+
+			<div class="column flex d-block" style="padding: 0px 50px;">
+				<img src="./images/me.png" class="me" />
+
+				<div class="label bold">Who's this guy?</div>
+
+				<div> I'm a web developer currently living in Caloocan, Philippines. I make web application usually with Laravel and Vue.js</div>
+
+			</div>
+
+			<div class="column flex skillset">
+
+				<div class="bar flex">
+					<div class="bar fill" style="width: 40%">
+						<div class="_tag bold flex">CSS</div>
 					</div>
+					<span>40%</span>
 				</div>
-		
-				<div class="col-md-9">
-					<span class="about-text">
-						
-					</span>
+
+				<div class="bar flex">
+					<div class="bar fill" style="width: 85%">
+						<div class="_tag bold flex">HTML</div>
+					</div>
+					<span>85%</span>
+				</div>
+
+				<div class="bar flex">
+					<div class="bar fill" style="width: 50%">
+						<div class="_tag bold flex">Javascript</div>
+					</div>
+					<span>60%</span>
+				</div>
+
+				<div class="bar flex">
+					<div class="bar fill" style="width: 60%">
+						<div class="_tag bold flex">PHP</div>
+					</div>
+					<span>60%</span>
+				</div>
+
+				<div class="bar flex">
+					<div class="bar fill" style="width: 50%">
+						<div class="_tag bold flex">Laravel</div>
+					</div>
+					<span>50%</span>
+				</div>
+
+				<div class="bar flex">
+					<div class="bar fill" style="width: 45%">
+						<div class="_tag bold flex">Vue.JS</div>
+					</div>
+					<span>45%</span>
+				</div>
+
+				<div class="bar flex">
+					<div class="bar fill" style="width: 80%">
+						<div class="_tag bold flex">JQuery</div>
+					</div>
+					<span>80%</span>
 				</div>	
+
+				<div class="bar flex">
+					<div class="bar fill" style="width: 30%">
+						<div class="_tag bold flex">PhotoShop</div>
+					</div>
+					<span>30%</span>
+				</div>
+
+
 			</div>
+
 		</div>
+
 	</div>
 
+</section>
 
-	<!-- Portfolio -->
-	<div id="portfolio">
-		<div class="title">Portfolio</div>
+<section id="portfolio" class="page flex" style="background-color: #f5f5f5">
+		
+	<div class="flex">
+		<div class="title">PORTFOLIO</div>
+		<div class="subtitle">Website is currently under construction</div>
 	</div>
 
+</section>
 
-	<!-- Contact -->
-	<div id="contact">
-		<div class="title">Contact Me</div>
+<section id="contact" class="page" style="background-color: #252934">
+	<div class="header" style="color:#fff">
+		CONTACT ME
 	</div>
 
+	<div style="color:#04C2C9">Have a questions or want to work together?</div>
+
+	<div class="container" style=" margin:auto;margin-top: 50px;">
+	    <div class="icon-wrap columns">
+
+		      <a href="https://www.linkedin.com/in/mattwilliams85" class="column">
+		        <div class="flex icon" id="icon-2">
+		          <i class="mdi mdi-twitter"></i>
+		        </div>
+		        <div>Twitter</div>
+		      </a>
+
+		      <a href="https://www.facebook.com/matthew.williams.351" class="column">
+		        <div class="flex icon" id="icon-3">
+		          <i class="mdi mdi-facebook"></i>
+		        </div>
+		        <div>Facebook</div>
+		      </a>
+
+		      <a href="https://instagram.com/infinite_edge/" class="column">
+		        <div class="flex icon" id="icon-4">
+		          <i class="mdi mdi-instagram"></i>
+		        </div>
+		        <div>Instagram</div>
+		      </a>
+
+		      <a href="http://codepen.io/matthewwilliams/" class="column">
+		        <div class="flex icon" id="icon-5">
+		          <i class="mdi mdi-github-circle"></i>
+		        </div>
+		        <div>Github</div>
+		      </a>
+	    </div>
+
+
+
+	</div>
+
+</section>
+
+<footer class="footer">
+	Email: lenard.mangayayam@gmail.com<br/>
+	Phone: (+63) 920-3656-587<br/><br/><br/>
+
+
+	<span style="color:#fff">LENARD MANGAY-AYAM <span style="font-family: 'Raleway-semibold';color: #E31B6D;">©2019</span></span>
+</footer>
+
+<script src="./js/main.js"></script>
 </body>
 </html>
