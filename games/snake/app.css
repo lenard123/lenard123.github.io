@@ -1,0 +1,55 @@
+
+.main-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.status-container {
+	padding: 30px;
+	flex: 1;
+	font-size: 35px;
+	font-weight: bold;
+	min-width: 150px;
+	margin: auto;
+}
+
+.game-container{
+	flex: 1;
+	padding: 10px;
+	min-width: 350px;
+}
+
+.snake-room {
+	margin: auto;
+	margin-top: 20px;
+}
+
+.snake-room, .snake-room td, .snake-room tr{
+    border: 1px solid #3D4A50;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+.snake-room td {
+    height:	10px;
+    width: 10px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+#controls  button {
+	padding: 20px;
+}
+
+.snake-body {
+	background-color: #ffffff;
+	border-color: #ffffff !important;
+}
+
+.food {
+	background-color: #00FF00;
+}

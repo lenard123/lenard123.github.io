@@ -1,0 +1,28 @@
+
+.board {
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.board, .board tr, .board td {
+	border: 1px solid #3D4A50;
+	border-collapse: collapse;
+}
+
+.board td {
+	padding: 10px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.buttons > * {
+	margin: 10px;
+}
