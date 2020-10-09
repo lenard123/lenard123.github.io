@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>Boolean Calculator</title>
+    <style>
+
+        body{
+            padding-left: 10px;
+            padding-right: 10px;
+        }        
+
+        #main{
+            width: 80%;
+            margin: auto;
+        }
+
+        tr, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        #expression{
+            padding: 5px;
+            width: 100%;
+        }
+
+        #_submit{
+            padding: 5px;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1 class="header">Boolean Algebra Parser</h1>
+<hr/>
+
+<div id="main">
+
+    <form action="javascript:submit()">
+        <h3>Enter Expression: </h3>
+        <input type="text" id="expression"/>
+        <input type="submit" value="Eval" id="_submit"/>
+    </form>
+    <br/>
+    <table id="table-result">
+        
+        <thead>
+            <tr id="header">
+            </tr>
+        </thead>
+        <tbody id="rows">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="Infix2Postfix.js"></script>
+<script src="Main.js"></script>
+</body>
+</html>    
