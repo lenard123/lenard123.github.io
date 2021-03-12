@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+	min-height: calc(100vh - 62px);
+}
+
+section.dark{
+	background-color: #111;
+}
+
+footer{
+	background: #000;
+}
+
+.orange{
+	color:#ff9933de;
+}
+
+
+.text-simple{
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.text-simple-2{
+	font-weight: 300;
+	font-size: 25px;
+}
+
+.btn-primary{
+	background: #ff9933;
+	color: #fff !important;
+	border-color: #d77f26;
+}
+
+.btn-primary:hover{
+	background-color: #d77f26;
+	border-color: #d77f26;
+}
+
+.btn.btn-primary:active{
+	background-color: #ff9933 !important;
+	border-color: #d77f26 !important;
+}
+
+.navbar .logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#home{
+	height: calc(100vh - 62px);
+	background: url(../images/cover.jpg);
+	background-color: gray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home .banner{
+	padding-top: 25vh;
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	#skills .card{
+		height: 100%;
+	}
+}
+
+
+.skill-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.skill-list .item{
+	text-align: center;
+	width: 80px;
+	font-size: 15px;
+	font-weight: 250;
+}
+
+.skill-list .item > img{
+	height: 50px;
+	width: auto;
+}
