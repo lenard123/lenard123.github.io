@@ -1,0 +1,45 @@
+.navbar {
+  @apply fixed w-full z-10 top-0;
+}
+
+.navbar-content-wrapper {
+  @apply mx-auto flex flex-wrap items-center justify-between mt-0 py-3 max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0;
+}
+
+.navbar-brand {
+  @apply text-green-400 text-base no-underline hover:no-underline font-extrabold text-xl;
+}
+
+.navbar-menu {
+  @apply flex items-center rounded text-gray-500 hover:text-gray-900 appearance-none h-5 w-5;
+}
+
+.navbar-content {
+  @apply w-full flex-grow md:flex md:items-center md:w-auto md:block mt-2 md:mt-0 z-20;
+}
+
+.navbar-links {
+  @apply flex flex-col justify-center flex-1 items-center font-bold h-screen md:h-auto md:flex-row md:justify-end;
+}
+
+
+.navbar-links-item.router-link-active, .navbar-links-item:hover {
+  @apply text-white no-underline bg-green-400 rounded-full;
+}
+
+.navbar-links-item {
+  @apply inline-block text-gray-400 no-underline py-2 px-4 my-2 lg:my-0;
+  animation-name: link-anim;
+  animation-duration: 1s;
+}
+
+@keyframes link-anim {
+  from {
+    opacity: 0;
+    transform: translate(50px, 0px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}

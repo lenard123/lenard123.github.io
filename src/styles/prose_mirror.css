@@ -1,0 +1,121 @@
+/* This element defines the size the iframe will take.
+   In this example we want to have a ratio of 25:14 */
+.ck-content .aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
+}
+
+/* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
+.ck-content .aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.ck-content {
+  font-size: 16px;
+}
+
+.ck-content blockquote,
+.ck-content dl,
+.ck-content dd,
+.ck-content h1,
+.ck-content h2,
+.ck-content h3,
+.ck-content h4,
+.ck-content h5,
+.ck-content h6,
+.ck-content hr,
+.ck-content figure,
+.ck-content p,
+.ck-content pre {
+  margin: revert;
+}
+
+.ck-content ol,
+.ck-content ul {
+  list-style: revert;
+  margin: revert;
+  padding: revert;
+}
+
+.ck-content table {
+  border-collapse: revert;
+}
+
+.ck-content h1,
+.ck-content h2,
+.ck-content h3,
+.ck-content h4,
+.ck-content h5,
+.ck-content h6 {
+  font-size: revert;
+  font-weight: revert;
+}
+
+.ck-content a {
+  @apply text-blue-600 hover:text-blue-800 hover:underline;
+}
+
+.ProseMirror {
+  @apply p-3;
+}
+
+.Prose {
+  @apply text-gray-600;
+}
+
+.Prose  blockquote {
+  @apply py-1 border-l-2 border-gray-300 pl-3;
+}
+
+.Prose h1 {
+  @apply text-3xl font-bold text-gray-900;
+}
+
+.Prose h2 {
+  @apply text-2xl font-bold text-gray-800;
+}
+
+.Prose h3 {
+  @apply text-xl font-semibold text-gray-700;
+}
+
+.Prose h4 {
+  @apply text-lg font-medium text-gray-600;
+}
+
+.Prose ul > li {
+  @apply list-disc ml-3;
+}
+
+.Prose ol > li {
+  @apply list-decimal ml-3;
+}
+
+.Prose pre {
+    background: #0D0D0D;
+    color: #FFF;
+    font-family: 'JetBrainsMono', monospace;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+  }
+
+.Prose pre code {
+  color: inherit;
+  padding: 0;
+  background: none;
+  font-size: 0.8rem;
+}
+
+.editor button{
+  @apply py-1 px-2 mr-1 rounded;
+}
+
+.editor .is-active {
+  @apply bg-gray-200;
+}
