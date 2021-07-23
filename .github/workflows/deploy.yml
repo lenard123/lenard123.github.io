@@ -28,7 +28,7 @@ jobs:
           VUE_APP_CLOUDINARY_API_SECRET: ${{ secrets.VUE_APP_CLOUDINARY_API_SECRET }}
       - uses: w9jds/firebase-action@master
         with:
-          args: deploy --only hosting
+          args: deploy --only hosting --project ${{ secrets.VUE_APP_FIREBASE_PROJECT_ID }}
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           
