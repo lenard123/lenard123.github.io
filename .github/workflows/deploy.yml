@@ -1,0 +1,34 @@
+name: Firebase Continuous Deployment
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: 14
+      - run: npm ci
+      - run: npm run build
+        env:
+          VUE_APP_FIREBASE_API_KEY: ${{ secrets.VUE_APP_FIREBASE_API_KEY }}
+          VUE_APP_FIREBASE_AUTH_DOMAIN: ${{ secrets.VUE_APP_FIREBASE_AUTH_DOMAIN }}
+          VUE_APP_FIREBASE_PROJECT_ID: ${{ secrets.VUE_APP_FIREBASE_PROJECT_ID }}
+          VUE_APP_FIREBASE_STORAGE_BUCKET: ${{ secrets.VUE_APP_FIREBASE_STORAGE_BUCKET }}
+          VUE_APP_FIREBASE_MESSAGE_SENDER_ID: ${{ secrets.VUE_APP_FIREBASE_MESSAGE_SENDER_ID }}
+          VUE_APP_FIREBASE_APP_ID: ${{ secrets.VUE_APP_FIREBASE_APP_ID }}
+          VUE_APP_CLOUDINARY_IMAGE_ERROR: ${{ secrets.VUE_APP_CLOUDINARY_IMAGE_ERROR }}
+          VUE_APP_CLOUDINARY_IMAGE_DEFAULT: ${{ secrets.VUE_APP_CLOUDINARY_IMAGE_DEFAULT }}
+          VUE_APP_CLOUDINARY_CLOUD_NAME: ${{ secrets.VUE_APP_CLOUDINARY_CLOUD_NAME }}
+          VUE_APP_CLOUDINARY_API_KEY: ${{ secrets.VUE_APP_CLOUDINARY_API_KEY }}
+          VUE_APP_CLOUDINARY_API_SECRET: ${{ secrets.VUE_APP_CLOUDINARY_API_SECRET }}
+      - uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          
