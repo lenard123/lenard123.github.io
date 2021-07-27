@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 60px;
+}
+
+.spin {
+  animation: spin infinite 3s linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#header {
+  min-height: unset;
+  border-bottom-left-radius:25%;
+  border-bottom-right-radius:25%;
+}

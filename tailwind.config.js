@@ -1,18 +1,18 @@
 module.exports = {
   purge: [
-   './src/**/*.js',
-   './src/**/*.vue',
+    './src/**/*.vue',
+    './src/**/*.js'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      height: {
+        '1/10': '10%'
+      }
+    },
   },
   variants: {
-    extend: {
-      backgroundColor: ["checked"],
-      borderColor: ["checked"],
-      inset: ["checked"],
-      zIndex: ["hover", "active"]
-    },
+    extend: {},
   },
   plugins: [],
 }
