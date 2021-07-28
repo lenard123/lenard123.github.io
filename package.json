@@ -7,8 +7,10 @@
     "css-dev": "npx tailwindcss -i ./src/main.css -o ./dist/css/styles.css",
     "css-prod": "set NODE_ENV=production & npx tailwindcss -i ./src/main.css -o ./dist/css/styles.css --minify",
     "css-watch": "npx tailwindcss -i ./src/main.css -o ./dist/css/styles.css --watch",
-    "dev": "webpack",
-    "watch": "webpack --watch"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "all": "npm run css-prod & npm run build"
   },
   "repository": {
     "type": "git",
