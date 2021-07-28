@@ -52,7 +52,9 @@ export default {
       "MySQL": "bg-yellow-600",
       "PHP": "bg-purple-600",
       "Laravel": "bg-red-700",
-      "VueJs": "bg-green-700"
+      "VueJs": "bg-green-700",
+      "TailwindCSS": "bg-blue-700",
+      "Firebase": "bg-yellow-600"
     }
 
     const getTagColor = (tag) => {
