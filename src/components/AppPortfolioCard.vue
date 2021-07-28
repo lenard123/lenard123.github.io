@@ -7,7 +7,10 @@
     </div>
     <div class="p-5 flex-grow">
       <a class="inline-block mb-2 text-black transition-colors duration-200 hover:text-deep-purple-accent-700">
-        <p class="text-2xl font-bold leading-5">{{ project.title }}</p>
+        <a 
+          :href="project.blog"
+          class="text-2xl font-bold leading-5"
+          >{{ project.title }}</a>
       </a>
       <p class="mb-3 text-xs text-white font-bold">
         <span 
