@@ -18,5 +18,15 @@ export default [
     youtube: "https://youtu.be/dsEoONiovdA",
     live: "https://voting-system-2.herokuapp.com/",
     tags: ["PHP", "Laravel", "VueJs", "MySQL"]
+  },
+  {
+    title: "My Personal Blog",
+    description: "A website where I can published a blog post and my projects.",
+    image: "https://res.cloudinary.com/djasbri35/image/upload/v1627445808/simple-blog/wubijsxwwt5kcoqwvj1p.png",
+    blog: "https://lenard123.github.io/blog/#/projects/20cvblUjZ6NvTeeMTOlU",
+    github: "https://lenard123.github.io/lenard123/blog",
+    youtube: null,
+    live: "https/lenard123.github.io/blog/",
+    tags: ["VueJs", "TailwindCSS", "Firebase"]
   }
 ]
