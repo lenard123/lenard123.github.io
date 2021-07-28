@@ -7,6 +7,10 @@ export default [
         img: './icons/css.png'
       },
       {
+        label: 'Laravel',
+        img: './icons/laravel.svg'
+      },
+      {
         label: 'C#.Net',
         img: './icons/csharp.png'
       }
@@ -22,10 +26,6 @@ export default [
       {
         label: 'VueJS',
         img: './icons/vuejs.svg'
-      },
-      {
-        label: 'Laravel',
-        img: './icons/laravel.svg'
       },
       {
         label: 'Java',
