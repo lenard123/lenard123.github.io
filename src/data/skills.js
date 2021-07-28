@@ -13,6 +13,10 @@ export default [
       {
         label: 'C#.Net',
         img: './icons/csharp.png'
+      },
+      {
+        label: 'Firebase',
+        img: './icons/firebase.png'
       }
     ]
   },
