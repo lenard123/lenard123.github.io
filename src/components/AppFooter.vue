@@ -24,7 +24,7 @@
     <div class="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
       <div>Lenard Mangay-ayam</div>
       <div> • </div>
-      <div>© 2021</div>
+      <div>© {{ CURRENT_YEAR }}</div>
       <div> • </div>
       <a href="/">Portfolio</a>
     </div>
@@ -34,3 +34,17 @@
   </div>
 </footer>
 </template>
+
+<script>
+
+import useRelativeDates from '../features/useRelativeDates.js'
+
+export default {
+  setup(){
+    const { CURRENT_YEAR } = useRelativeDates()
+    return {
+      CURRENT_YEAR
+    }
+  }
+}
+</script>

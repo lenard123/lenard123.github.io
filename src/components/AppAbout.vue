@@ -14,7 +14,7 @@
       <!-- Thanks to [wloisv@gmail.com] for correcting my mistakes -->
       <p class="mb-4">Hey there! I'm Lenard Mangay-ayam, a web developer based in the historic city of Caloocan.</p>
 
-      <p class="mb-4">I'm 19 Years old and currently a 3rd year Computer Science student at University of Caloocan City. I have been coding for 5 years and have learned a lot of things along the way.</p>
+      <p class="mb-4">I'm {{ AGE }} Years old and currently a {{ COLLEGE_LEVEL }} Computer Science student at University of Caloocan City. I have been coding for {{ EXPERIENCE }} years and have learned a lot of things along the way.</p>
 
       <p class="mb-4">I am in love with web development as it is a way for me to express myself, my talents, and my skills by creating applications that many people can benefit from.</p>
 
@@ -24,3 +24,19 @@
   </div>
 </section>
 </template>
+
+<script>
+import useRelativeDates from '../features/useRelativeDates.js'
+
+export default {
+  setup() {
+    const { AGE, COLLEGE_LEVEL, EXPERIENCE } = useRelativeDates()
+
+    return {
+      AGE,
+      COLLEGE_LEVEL,
+      EXPERIENCE
+    }    
+  }
+}
+</script>
