@@ -4,12 +4,12 @@
   "description": "My personal website to showcase my projects and skills.",
   "private": true,
   "scripts": {
-    "css-dev": "npx tailwindcss -i ./src/main.css -o ./dist/css/styles.css",
-    "css-prod": "set NODE_ENV=production & npx tailwindcss -i ./src/main.css -o ./dist/css/styles.css --minify",
-    "css-watch": "npx tailwindcss -i ./src/main.css -o ./dist/css/styles.css --watch",
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development",
-    "watch": "webpack --mode development --watch",
+    "css-dev": "cross-env NODE_ENV=development tailwindcss -i ./src/main.css -o ./dist/css/styles.css",
+    "css-watch": "cross-env NODE_ENV=development tailwindcss -i ./src/main.css -o ./dist/css/styles.css --watch",
+    "css-prod": "cross-env NODE_ENV=production tailwindcss -i ./src/main.css -o ./dist/css/styles.css --minify",
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "cross-env NODE_ENV=development webpack",
+    "watch": "cross-env NODE_ENV=development webpack --watch",
     "all": "npm run css-prod & npm run build"
   },
   "repository": {
@@ -23,15 +23,16 @@
   },
   "homepage": "https://github.com/lenard123/lenard123.github.io#readme",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "firebase": "^8.8.0",
     "tailwindcss": "^2.2.7",
     "vue": "^3.1.5"
   },
   "dependencies": {
+    "@vue/compiler-sfc": "^3.1.5",
     "autoprefixer": "^10.3.1",
     "dotenv-webpack": "^7.0.3",
     "postcss": "^8.3.6",
-    "@vue/compiler-sfc": "^3.1.5",
     "vue-loader": "^16.3.3",
     "webpack": "^5.46.0",
     "webpack-cli": "^4.7.2"
