@@ -37,7 +37,7 @@
 
 <script>
 
-import useRelativeDates from '../features/useRelativeDates.js'
+import useRelativeDates from '@/features/useRelativeDates.js'
 
 export default {
   setup(){

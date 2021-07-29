@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import skills from '../data/skills.js'
+import skills from '@/data/skills.js'
 import AppSkillsCard from './AppSkillsCard.vue'
 
 export default {

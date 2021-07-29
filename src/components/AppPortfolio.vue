@@ -18,7 +18,7 @@
 
 <script>
 import AppPortfolioCard from './AppPortfolioCard.vue'
-import projects from '../data/projects.js'
+import projects from '@/data/projects.js'
 
 export default {
   components: {

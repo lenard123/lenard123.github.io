@@ -44,7 +44,7 @@
 <script>
 
 import { reactive, ref } from 'vue'
-import sendMessage from '../features/sendMessage.js'
+import sendMessage from '@/features/sendMessage.js'
 
 export default {
   setup() {

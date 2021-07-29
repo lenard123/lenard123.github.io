@@ -63,7 +63,7 @@ import { ref, computed } from 'vue'
 
 import AppNavbarLink from './AppNavbarLink.vue'
 
-import scrollSpy from '../features/scrollSpy.js'
+import scrollSpy from '@/features/scrollSpy.js'
 
 export default {
 
