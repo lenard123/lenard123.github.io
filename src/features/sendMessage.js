@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 
 //Lazy load firebase
-const firebaseAsync = import(/* webpackChunkName: "firebase" */'../firebase/firebase.js')
+const firebaseAsync = import(/* webpackChunkName: "firebase" */'@/firebase.js')
 
 const sendMessage = async(message) => {
   const { firebase, db } = await firebaseAsync
