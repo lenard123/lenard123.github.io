@@ -2,6 +2,5 @@ Thumbs.db
 .env
 dist/js/*
 dist/css/styles.css
-docs/
 node_modules
 
