@@ -2,12 +2,12 @@ import app from 'firebase/app'
 import 'firebase/firestore'
 
 app.initializeApp({
-    apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
-    authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGE_SENDER_ID,
-    appId: process.env.VUE_APP_FIREBASE_APP_ID,
+    apiKey: 'AIzaSyAss4VCfMa1ABwkxsPHfy3lHYZNsWV_rOk',
+    authDomain: 'simple-blog-2df89.firebaseapp.com',
+    projectId: 'simple-blog-2df89',
+    storageBucket: 'simple-blog-2df89.appspot.com',
+    messagingSenderId: '508322664556',
+    appId: '1:508322664556:web:afce88b807e5e2897e4849',
 })
 
 
