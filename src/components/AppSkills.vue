@@ -1,14 +1,14 @@
 <template>
-<section id="skills" class="py-24 bg-gray-50">
+<section id="skills" class="py-24 bg-gray-50 flex flex-col">
 
-  <div class="container mx-auto px-5">
+  <div class="container mx-auto px-5 flex flex-col flex-grow ">
 
     <div class="text-center mb-5">
       <h1 class="text-purple-900 font-black text-4xl">My Skill Set</h1>
       <p class="text-gray-500">Languanges and Frameworks I'm capable of</p>
     </div>
 
-    <div class="text-gray-700 grid gap-10 md:grid-cols-3">
+    <div class="text-gray-700 grid gap-10 md:grid-cols-3 flex-grow">
       <AppSkillsCard 
         v-for="skill in skills"
         :key="skill.label"
