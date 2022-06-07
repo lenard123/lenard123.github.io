@@ -4,6 +4,7 @@ import { BackTop, Layout, Typography } from 'antd';
 import Topbar from './components/Topbar/Topbar';
 import Banner from './components/Banner/Banner';
 import About from './components/About/About';
+import Skills from './components/Skills/Skills';
 
 const { Header, Footer, Content } = Layout;
 const { Title } = Typography
@@ -18,6 +19,7 @@ function App() {
       <Content>
         <Banner />
         <About />
+        <Skills />
         <BackTop />
       </Content>
     </Layout>

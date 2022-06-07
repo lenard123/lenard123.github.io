@@ -3,7 +3,7 @@ import { Button } from "antd";
 
 export default function Banner() {
     return (
-        <section className="container mx-auto py-40 px-5 text-center  h-screen -mt-16">
+        <section className="container mx-auto py-40 px-5 text-center  -mt-16">
             <h1 className="uppercase text-white text-xl leading-6 mb-6 sm:text-3xl sm:leading-10">
                 I am <span className="text-blue-300 font-semibold">Lenard Mangay-ayam</span> <br />
                 and I'm a Full Stack Web Developer
