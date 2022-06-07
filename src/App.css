@@ -6,6 +6,11 @@ img, svg, video, canvas, audio, iframe, embed, object {
     vertical-align: initial;
 }
 
+html, body {
+    scroll-padding-top: 32px;
+    scroll-behavior: smooth;
+}
+
 body {
     @apply bg-slate-800 text-slate-100;
 }

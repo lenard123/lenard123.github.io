@@ -8,9 +8,9 @@ export default function Topbar() {
                 theme='dark'
                 mode='horizontal'
                 items={[
-                    { key: 1, label: 'About' },
-                    { key: 2, label: 'Skills' },
-                    { key: 3, label: 'Projects' },
+                    { key: 1, label: <a href='#about'>About</a> },
+                    { key: 2, label: <a href='#skills'>Skills</a> },
+                    { key: 3, label: <a href='#projects'>Projects</a> },
                     { key: 4, label: 'Contact' }
                 ]}
             />

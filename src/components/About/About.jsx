@@ -3,14 +3,14 @@ import { Button } from "antd";
 
 export default function About() {
     return (
-        <section className="max-w-screen-lg container mx-auto py-16 px-5 text-center  min-h-screen ">
+        <section id='about' className="max-w-screen-lg container mx-auto py-16 px-5 text-center  min-h-screen ">
             <div className="text-center mb-16">
                 <h1 className="text-blue-300 font-black text-4xl">About me</h1>
                 <p className="text-gray-500">Get to know me</p>
             </div>
 
             <div className="grid gap-5 md:grid-cols-4">
-                <img src="https://lenard123.github.io/img/me.png" className="w-36 md:w-full h-auto px-5"/>
+                <img src="/assets/img/me.png" className="w-36 md:w-full h-auto px-5"/>
 
                 <div className="text-justify text-gray-300 font-light text-lg col-span-3">
                     <p className="font-bold text-xl mb-4">Who am I?</p>

@@ -26,13 +26,13 @@ const tools = [
 
 export default function Skills() {
     return (
-        <section className="max-w-screen-lg container mx-auto py-16 px-5  min-h-screen ">
+        <section id='skills' className="max-w-screen-lg container mx-auto py-16 px-5  min-h-screen ">
             <div className="text-center mb-16">
                 <h1 className="text-blue-300 font-black text-4xl">My Skill Set</h1>
                 <p className="text-gray-500">Languanges and Frameworks I'm capable of</p>
             </div>
 
-            <div className='grid sm:grid-cols-3'>
+            <div className='grid sm:grid-cols-3 gap-y-4'>
                 <Card title={<Title level={4}>Language</Title>}>
                     <List
                         itemLayout="horizontal"
