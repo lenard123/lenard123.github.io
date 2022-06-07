@@ -14,3 +14,7 @@ html, body {
 body {
     @apply bg-slate-800 text-slate-100;
 }
+
+.ant-form-item-label label {
+    @apply text-white;
+}

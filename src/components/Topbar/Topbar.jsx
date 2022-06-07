@@ -11,7 +11,7 @@ export default function Topbar() {
                     { key: 1, label: <a href='#about'>About</a> },
                     { key: 2, label: <a href='#skills'>Skills</a> },
                     { key: 3, label: <a href='#projects'>Projects</a> },
-                    { key: 4, label: 'Contact' }
+                    { key: 4, label: <a href='#contact'>Contact</a>}
                 ]}
             />
         </div>
