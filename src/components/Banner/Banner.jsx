@@ -14,7 +14,7 @@ export default function Banner() {
                 I can also do desktop application using WinForms .Net framework.
             </p>
 
-            <Button shape='round' type='primary'>Learn more</Button>
+            <Button href='#about' shape='round' type='primary'>Learn more</Button>
 
         </section>
     )

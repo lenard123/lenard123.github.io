@@ -15,7 +15,7 @@ const framework = [
     { label: 'VueJs', logo: '/assets/icons/vuejs.svg' },
     { label: 'Laravel', logo: '/assets/icons/laravel.svg' },
     { label: 'AndtD', logo: '/assets/icons/antd.svg' },
-    { label: 'Tailwind CSS', logo: '/assets/icons/tailwind.svg' },
+    { label: 'Tailwind CSS', logo: '/assets/icons/tailwind.png' },
     { label: 'Firebase', logo: '/assets/icons/firebase.png' },
 ]
 

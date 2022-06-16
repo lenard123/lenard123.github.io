@@ -22,7 +22,7 @@ export default function About() {
 
                     <p className="mb-4">I am in love with web development as it is a way for me to express myself, my talents, and my skills by creating applications that many people can benefit from.</p>
 
-                    <Button type="primary" shape="round" size="large">Download CV</Button>
+                    <Button target='_blank' href='/assets/Lenard+Mangay-ayam.pdf' type="primary" shape="round" size="large">Download CV</Button>
                 </div>
             </div>
         </section>
