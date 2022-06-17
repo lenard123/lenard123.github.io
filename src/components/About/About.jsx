@@ -18,7 +18,7 @@ export default function About() {
                     {/* <!-- Thanks to [wloisv@gmail.com] for correcting my mistakes --> */}
                     <p className="mb-4">Hey there! I'm Lenard Mangay-ayam, a web developer based in the historic city of Caloocan.</p>
 
-                    <p className="mb-4">I'm 20 Years old and currently a 4th year Computer Science student at University of Caloocan City. I have been coding for 4 years and have learned a lot of things along the way.</p>
+                    <p className="mb-4">I'm 20 Years old and currently a 3rd year Computer Science student at University of Caloocan City. I have been coding for 4 years and have learned a lot of things along the way.</p>
 
                     <p className="mb-4">I am in love with web development as it is a way for me to express myself, my talents, and my skills by creating applications that many people can benefit from.</p>
 
