@@ -1,4 +1,4 @@
-import { Avatar, Card, Image, List, Typography } from "antd";
+import { Card, Image, List, Typography } from "antd";
 
 const { Title } = Typography
 const language = [
@@ -41,7 +41,7 @@ export default function Skills() {
                             <List.Item>
                                 <List.Item.Meta
                                     avatar={<Image preview={false} height={32} width={32} src={item.logo} />}
-                                    title={<Title level={5}>{item.label}</Title>}
+                                    title={<div className="ant-typography-h5">{item.label}</div>}
                                 />
                             </List.Item>
                         )}
@@ -55,7 +55,7 @@ export default function Skills() {
                             <List.Item>
                                 <List.Item.Meta
                                     avatar={<Image preview={false} height={32} width={32} src={item.logo} />}
-                                    title={<Title level={5}>{item.label}</Title>}
+                                    title={<div className="ant-typography-h5">{item.label}</div>}
                                 />
                             </List.Item>
                         )}
@@ -69,7 +69,7 @@ export default function Skills() {
                             <List.Item>
                                 <List.Item.Meta
                                     avatar={<Image preview={false} height={32} width={32} src={item.logo} />}
-                                    title={<Title level={5}>{item.label}</Title>}
+                                    title={<div className="ant-typography-h5">{item.label}</div>}
                                 />
                             </List.Item>
                         )}

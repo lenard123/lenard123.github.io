@@ -18,3 +18,7 @@ body {
 .ant-form-item-label label {
     @apply text-white;
 }
+
+.ant-image-preview-img {
+    display: inline;
+}

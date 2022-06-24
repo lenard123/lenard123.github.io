@@ -1,6 +1,6 @@
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import './App.css'
-import { BackTop, ConfigProvider, Layout, Typography } from 'antd';
+import { BackTop, ConfigProvider, Layout } from 'antd';
 import Topbar from './components/Topbar/Topbar';
 import Banner from './components/Banner/Banner';
 import About from './components/About/About';
@@ -10,7 +10,6 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
 const { Header, Content } = Layout;
-const { Title } = Typography
 
 function App() {
 
