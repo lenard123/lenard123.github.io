@@ -24,6 +24,7 @@ export default function Project() {
                     description='TechGear is an Ecommerce website that sells electronics and gadgets. This project is built using Alpine JS and Tailwind CSS on top of Laravel. '
                     tags={['PHP', 'Laravel', 'TailwindCSS', 'MySQL', 'AlpineJS']}
                     links={{ github: 'https://github.com/lenard123/techgear', web: 'https://techgear.studio/', }}
+                    images={Array(25).fill(null).map((o, i) => `assets/img/ss/techgear/${i+1}.png`)}
                 />
 
                 <Card
