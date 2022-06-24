@@ -32,6 +32,7 @@ export default function Project() {
                     description='A system that allows admin to create and manage an election online.'
                     tags={['PHP', 'Laravel', 'VueJS', 'MySQL']}
                     links={{ github: 'https://github.com/lenard123/Voting-System/', web: 'https://voting-system-2.herokuapp.com/', }}
+                    images={Array(16).fill(null).map((o, i) => `assets/img/ss/voting-system-web/${i+1}.png`)}
                 />
 
                 <Card
@@ -46,6 +47,7 @@ export default function Project() {
                     description='This system allows business owners to track sales, cash flow, food inventory and can help simplify your bookkeeping enormously.'
                     tags={['C#.Net', 'WinForms', 'Guna2UI', 'MySQL']}
                     links={{ github: 'https://github.com/lenard123/fastfood-pos-csharp/' }}
+                    images={Array(10).fill(null).map((o, i) => `assets/img/ss/fastfood-pos/${i+1}.png`)}
                 />
 
 
